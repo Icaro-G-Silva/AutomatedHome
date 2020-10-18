@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\bin\Debug\CasaAutomatizada.exe.config
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\bin\Debug\CasaAutomatizada.exe
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\bin\Debug\CasaAutomatizada.pdb
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.Check.resources
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.Main.resources
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.Properties.Resources.resources
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.exe
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.pdb
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\bin\Debug\Microsoft.Speech.dll
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\obj\Debug\CasaAutomatizada.csproj.CopyComplete
+C:\Users\Usuario\Desktop\CasaAutomatizada\CasaAutomatizada\CasaAutomatizada\bin\Debug\System.Data.SQLite.dll
