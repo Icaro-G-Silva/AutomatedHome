@@ -39,6 +39,9 @@ namespace CasaAutomatizada
         #endregion
 
         #region Setting Attributes
+        /*
+        *  Configurando alguns atributos da classe (Apenas criando eles para posteriormente adicionar alguma coisa mais útil)
+        */
         private ConnectionSQLite sqlite;
 
         private SpeechRecognition speech, speechTrigger;
@@ -50,13 +53,19 @@ namespace CasaAutomatizada
         #endregion
 
         #region Main Configurations
+        
+        /*
+        *  Configurações principais, aqui já começo configurando algumas coisas que irá ser utilizada
+        */
+        
         private void Main_Load(object sender, EventArgs e)
         {
             try
             {
+                //Aqui começo a instânciar a Classe do Banco de Dados e a puxar os dados do Banco
                 this.sqlite = new ConnectionSQLite();
                 DataTable content = this.loadBD();
-
+                //Neste looping estou adicionando as instruções em uma lista para passar para o "reconhecedor de voz"
                 for (int i = 0; i < content.Rows.Count; i++) this.instructionList.Add(content.Rows[i]["Instrucao"].ToString());
 
                 this.instructionList.Add("obrigado");
@@ -65,12 +74,12 @@ namespace CasaAutomatizada
                 this.speech = new SpeechRecognition(this.library);
                 string[] triggerLib = { "ei casa" };
                 this.speechTrigger = new SpeechRecognition(triggerLib);
-
+                //Aqui é feita a configuração dos métodos que vão "escutar" a sua voz
                 this.speech.speechEngine.SpeechRecognized += this.speechRecognized;
                 this.speechTrigger.speechEngine.SpeechRecognized += this.speechTriggerListener;
 
                 this.speechTrigger.listen();
-
+                //Aqui inicio a configuração do Arduino
                 this.setArduinoThings();
             }
             catch (Exception err)
@@ -83,6 +92,9 @@ namespace CasaAutomatizada
         #endregion
 
         #region Logical SpeechRecognition
+        /*
+        *  Todo código até o próximo "#endregion" é toda a parte lógica do "reconhecedor de voz"
+        */
         private void speechTriggerListener(object sender, SpeechRecognizedEventArgs e)
         {
             try
@@ -116,6 +128,7 @@ namespace CasaAutomatizada
                 }
                 else
                 {
+                    //Aqui é onde definitivamente é feita a análise do que você disse e comparado às instruções, e então é executado o que está dentro do "IF"
                     for (int i = 0; i < content.Rows.Count; i++)
                     {
                         if (e.Result.Text.Equals(content.Rows[i]["Instrucao"].ToString()))
@@ -139,6 +152,9 @@ namespace CasaAutomatizada
         #endregion
 
         #region Select into DB
+        /*
+        *  Aqui é onde pega as informações de dentro do BD
+        */
         private DataTable loadBD()
         {
             try
@@ -159,11 +175,15 @@ namespace CasaAutomatizada
         #endregion
 
         #region Doing some Arduino Things
+        /*
+        *  Até o próximo "#endregion" é feito tudo o que for preciso para o funcionamento do Arduino
+        */
         private void getAvaiablePorts()
         {
             this.ports = SerialPort.GetPortNames();
         }
 
+        //Esse é o método de Conexão
         private void connectOnArduino()
         {
             try
