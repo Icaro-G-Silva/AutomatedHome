@@ -9,7 +9,7 @@ Counting on with: <br><br>
 + Arduino Communication
 
 ## The Real need
-Made it to help a friend with her final undergraduated project. Cheers Ray ;)
+Made it to help a friend with her final undergraduated project. Cheers Rai ;)
 
 ## Version
 > 1.0.0
